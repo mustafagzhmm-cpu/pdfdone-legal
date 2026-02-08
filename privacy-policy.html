@@ -1,121 +1,198 @@
+<h1>Privacy Policy</h1>
+
+<div class="badge">Last updated: February 9, 2026</div>
+
+<p>
+This Privacy Policy explains how PDFDone (“we”, “our”, or “us”) handles information…
+</p>
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy - PDFDone</title>
   <meta name="description" content="Privacy Policy for PDFDone" />
   <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      line-height: 1.55;
-      margin: 0;
+    :root{
+      --bg:#0b0c0f;
+      --card:#12141a;
+      --text:#e9eef7;
+      --muted:#aab4c5;
+      --line:#232838;
+      --link:#8ab4ff;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f7fb;
+        --card:#ffffff;
+        --text:#111827;
+        --muted:#4b5563;
+        --line:#e5e7eb;
+        --link:#2563eb;
+      }
+    }
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    .wrap{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 18px 60px;
+    }
+    header{
+      margin-bottom: 18px;
+    }
+    h1{
+      font-size: 28px;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle{
+      color:var(--muted);
+      margin:0;
+    }
+    .card{
+      background:var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 18px;
+      margin-top: 14px;
+    }
+    h2{
+      font-size: 18px;
+      margin: 0 0 10px;
+      letter-spacing: -0.01em;
+    }
+    p, li{
+      color: var(--text);
+    }
+    .muted{
+      color: var(--muted);
+    }
+    a{
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    ul{
+      margin: 10px 0 0 18px;
       padding: 0;
-      background: Canvas;
-      color: CanvasText;
     }
-    header {
-      padding: 28px 20px 10px;
-      border-bottom: 1px solid color-mix(in srgb, CanvasText 14%, transparent);
-      background: color-mix(in srgb, Canvas 92%, CanvasText 8%);
+    .footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
     }
-    main { max-width: 860px; margin: 0 auto; padding: 22px 20px 60px; }
-    h1 { font-size: 26px; margin: 0 0 6px; }
-    .meta { opacity: 0.8; font-size: 14px; margin: 0; }
-    h2 { margin-top: 26px; font-size: 18px; }
-    p, li { font-size: 15px; }
-    ul { padding-left: 18px; }
-    a { color: inherit; text-decoration: underline; }
-    .box {
-      padding: 14px;
-      border: 1px solid color-mix(in srgb, CanvasText 14%, transparent);
-      border-radius: 12px;
-      background: color-mix(in srgb, Canvas 96%, CanvasText 4%);
-      margin-top: 12px;
+    .badge{
+      display:inline-block;
+      padding: 6px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:var(--muted);
+      font-size: 12px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Privacy Policy</h1>
-    <p class="meta">App: <strong>PDFDone</strong> | Last updated: <strong>2026-02-08</strong></p>
-  </header>
+  <main class="wrap">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        This Privacy Policy explains how PDFDone (“we”, “our”, or “us”) handles information when you use the PDFDone mobile application (the “App”).
+      </p>
+      <div class="badge">Last updated: <span id="lastUpdated"></span></div>
+    </header>
 
-  <main>
-    <p>
-      This Privacy Policy explains how PDFDone (“we”, “our”, or “us”) handles information when you use the PDFDone
-      mobile application (the “App”).
-    </p>
-
-    <div class="box">
+    <section class="card">
       <p><strong>Short version:</strong> Your documents are processed on-device. We do not sell your data.</p>
-    </div>
+    </section>
 
-    <h2>1) Information We Collect</h2>
-    <ul>
-      <li><strong>Documents and files you choose:</strong> PDFs, photos, scans, signatures, and edits you create in the App.</li>
-      <li><strong>Purchase information:</strong> Subscription status provided by Apple via StoreKit.</li>
-      <li><strong>Support communications:</strong> Information you send us when contacting support.</li>
-    </ul>
+    <section class="card">
+      <h2>1) Information We Collect</h2>
+      <ul>
+        <li><strong>Documents and files you choose:</strong> PDFs, photos, scans, signatures, and edits you create in the App.</li>
+        <li><strong>Purchase information:</strong> Subscription status provided by Apple via StoreKit.</li>
+        <li><strong>Support communications:</strong> Information you send us when contacting support.</li>
+        <li><strong>Usage limits:</strong> We may store limited usage-related information locally on your device to enforce free usage limits. This data is not transmitted off the device.</li>
+      </ul>
+    </section>
 
-    <h2>2) How We Use Information</h2>
-    <ul>
-      <li>To provide PDF editing, signing, and export features.</li>
-      <li>To manage subscriptions and Pro access.</li>
-      <li>To respond to user support requests.</li>
-    </ul>
+    <section class="card">
+      <h2>2) How We Use Information</h2>
+      <ul>
+        <li>To provide PDF editing, signing, and export features.</li>
+        <li>To manage subscriptions and Pro access.</li>
+        <li>To respond to user support requests.</li>
+      </ul>
+    </section>
 
-    <h2>3) On-Device Processing</h2>
-    <p>
-      PDFDone processes documents primarily on your device. We do not store your documents on external servers.
-    </p>
+    <section class="card">
+      <h2>3) On-Device Processing</h2>
+      <p>PDFDone processes documents primarily on your device. We do not store your documents on external servers.</p>
+    </section>
 
-    <h2>4) Data Sharing</h2>
-    <p>
-      We do not sell or share your personal data. Files are shared only when you explicitly export or share them.
-    </p>
+    <section class="card">
+      <h2>4) Data Sharing</h2>
+      <p>We do not sell or share your personal data. Files are shared only when you explicitly export or share them.</p>
+    </section>
 
-    <h2>5) Third-Party Services</h2>
-    <p>
-      <strong>Apple StoreKit:</strong> Handles purchases and subscriptions according to Apple’s policies.
-    </p>
-    <p>
-      The App currently does not use third-party analytics or crash reporting tools.
-    </p>
+    <section class="card">
+      <h2>5) Third-Party Services</h2>
+      <ul>
+        <li><strong>Apple StoreKit:</strong> Handles purchases and subscriptions according to Apple’s policies.</li>
+      </ul>
+      <p class="muted">The App currently does not use third-party analytics or crash reporting tools.</p>
+    </section>
 
-    <h2>6) Permissions</h2>
-    <ul>
-      <li>Camera – for scanning documents (optional).</li>
-      <li>Photos – for importing images (optional).</li>
-      <li>Files – for selecting PDFs (optional).</li>
-    </ul>
+    <section class="card">
+      <h2>6) Permissions</h2>
+      <ul>
+        <li><strong>Camera</strong> – for scanning documents (optional).</li>
+        <li><strong>Photos</strong> – for importing images (optional).</li>
+        <li><strong>Files</strong> – for selecting PDFs (optional).</li>
+      </ul>
+    </section>
 
-    <h2>7) Data Retention</h2>
-    <p>
-      Temporary files may be stored locally on your device during editing. You control your data and can remove it at any time.
-    </p>
+    <section class="card">
+      <h2>7) Data Retention</h2>
+      <p>Temporary files may be stored locally on your device during editing. You control your data and can remove it at any time.</p>
+    </section>
 
-    <h2>8) Children’s Privacy</h2>
-    <p>
-      PDFDone is not intended for children under 13 and does not knowingly collect children’s data.
-    </p>
+    <section class="card">
+      <h2>8) Children’s Privacy</h2>
+      <p>PDFDone is not intended for children under 13 and does not knowingly collect children’s data.</p>
+    </section>
 
-    <h2>9) Changes</h2>
-    <p>
-      We may update this Privacy Policy from time to time. Changes will be reflected on this page.
-    </p>
+    <section class="card">
+      <h2>9) Changes</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page.</p>
+    </section>
 
-    <h2>10) Contact</h2>
-    <p>
-      If you have questions, contact us at:<br>
-      <strong>Email:</strong> <a href="mailto:pdfdone@outlook.com">pdfdone@outlook.com</a>
-    </p>
+    <section class="card">
+      <h2>10) Contact</h2>
+      <p>If you have questions, contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:pdfdone@outlook.com">pdfdone@outlook.com</a></p>
+    </section>
 
-    <hr style="margin:28px 0; opacity:0.35;">
-    <p class="meta">
-      This policy is provided for informational purposes and complies with Apple App Store Review Guidelines.
+    <p class="footer">
+      This policy is provided for informational purposes and is intended to comply with Apple App Store Review Guidelines.
     </p>
   </main>
+
+  <script>
+    // Simple "Last updated" stamp (UTC). You can hardcode a date if you prefer.
+    (function () {
+      var d = new Date();
+      document.getElementById("lastUpdated").textContent =
+        d.toISOString().slice(0, 10);
+    })();
+  </script>
 </body>
 </html>
